@@ -17,7 +17,7 @@ class NyuDatasetGenerator():
         self.cube_size = (300, 300, 300)
         self.img_size = (64, 64)
         
-        self.src_dir = os.path.join(dataset_dir, 'dataset', subset)
+        self.src_dir = os.path.join(dataset_dir, subset)
         self.npy_dir = os.path.join(dataset_dir, 'npy-%d'%self.img_size[0], subset)
         if not os.path.exists(self.npy_dir):
             os.makedirs(self.npy_dir)
